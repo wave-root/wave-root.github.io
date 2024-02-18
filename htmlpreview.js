@@ -34,7 +34,8 @@
 		'Allmende_io',
 		'GitLab_OpenSourceEcology_de',
 		'CodeBerg_org',
-		'Git_Sr_Ht'
+		'Git_Sr_Ht',
+		'Git_In-wave_com'
 	]);
 
 	/**
@@ -166,6 +167,9 @@
 				|| url.host == 'github.com') {
 			software = FORGE_SOFTWARES.GitHub;
 			host = FORGE_HOSTS.GitHub_com;
+		} else if (url.host == 'git.in-wave.com') {
+			software = FORGE_SOFTWARES.ForgeJo;;
+			host = FORGE_HOSTS.Git_In-wave_com;
 		} else if (url.host == 'bitbucket.org'
 				&& (/^\/[^/]+\/[^/]+\/(src|raw)\/[^/]+/).test(url.pathname)) {
 			software = FORGE_SOFTWARES.BitBucket;
@@ -244,7 +248,7 @@
 			return loc.origin + loc.pathname;
 		}
 		// Fallback value
-		return 'https://html-preview.github.io/';
+		return 'https://preview.in-wave.com/';
 	};
 
 	/**
