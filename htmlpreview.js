@@ -35,7 +35,7 @@
 		'GitLab_OpenSourceEcology_de',
 		'CodeBerg_org',
 		'Git_Sr_Ht',
-		'Git_In-wave_com'
+		'Gitinwave_com'
 	]);
 
 	/**
@@ -169,7 +169,7 @@
 			host = FORGE_HOSTS.GitHub_com;
 		} else if (url.host == 'git.in-wave.com') {
 			software = FORGE_SOFTWARES.ForgeJo;;
-			host = FORGE_HOSTS.Git_In-wave_com;
+			host = FORGE_HOSTS.Gitinwave_com;
 		} else if (url.host == 'bitbucket.org'
 				&& (/^\/[^/]+\/[^/]+\/(src|raw)\/[^/]+/).test(url.pathname)) {
 			software = FORGE_SOFTWARES.BitBucket;
